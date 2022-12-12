@@ -6,4 +6,6 @@
   font-size: 18px;
   background-color: #2A2C2F;
   margin: 0 auto;
+  /* text-rendering: optimizeLegibility; */
+
 }

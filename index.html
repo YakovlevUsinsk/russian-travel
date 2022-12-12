@@ -10,6 +10,7 @@
 </head>
 
 <body class="page">
+
   <header class="header page__header">
     <svg class="header__logo" viewBox="0 0 176 52" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -39,11 +40,24 @@
       <a href="" class="header__lang-link">En</a>
     </div>
   </header>
-  <main class="content">
-    <section class="lead">
-      <h1 class="title"></h1>
-      <p class="subtitle"></p>
+
+  <main class="content page__content">
+
+    <section class="lead content__lead">
+      <h1 class="title lead__title">Путешествия по России</h1>
+      <p class="subtitle lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
+      <figure class="lead__image">
+        <img srcset="images/lead/lead__image320.png 320w,
+        images/lead/lead__image768.png 768w,
+        images/lead/lead__image928.png 928w,
+        images/lead/lead__image984.png 984w" sizes="(max-width: 320px) 320px,
+                (max-width: 768px) 768px,
+                (max-width: 1024px) 928px,
+                984px" src="./images/lead/lead__image984.png" alt="Ваша полка - верхняя">
+        <figcaption class="lead__caption">ваша полка &ndash; верхняя</figcaption>
+      </figure>
     </section>
+
   </main>
 
 </body>
