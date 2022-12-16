@@ -1,0 +1,48 @@
+.cover__wrapper {
+  background-image: url(../../../images/cover/cover__background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 32px;
+  text-decoration: none;
+}
+
+.cover__wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2A2C2F;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.cover__wrapper:hover::before {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {
+  .cover__wrapper {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__wrapper {
+    min-height: 480px;
+  }
+}
+
+@media  screen and (max-width: 320px) {
+  .cover__wrapper {
+    min-height: 200px;
+    row-gap: 16px;
+  }
+}
