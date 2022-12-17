@@ -13,6 +13,7 @@
 }
 
 .cover__wrapper::before {
+  width: 100%;
   content: '';
   position: absolute;
   top: 0;

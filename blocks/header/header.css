@@ -1,20 +1,21 @@
 .header {
   display: flex;
   justify-content: space-between;
-  max-width: 1184px;
+  max-width: calc((1184/1280)*100%);
 }
 
 @media screen and (max-width: 1024px) {
   .header {
-    max-width: 928px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .header {
-      max-width: 720px;
-    }
+    max-width: calc((928/1024)*100%);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: calc((720/768)*100%);
+  }
+}
+
 
 @media screen and (max-width: 320px) {
   .header {
